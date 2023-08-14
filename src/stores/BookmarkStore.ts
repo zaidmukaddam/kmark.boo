@@ -74,8 +74,6 @@ export const useBookmarkStore = create<BookmarkState>(set => ({
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "Something went wrong."
       return { data: errorMessage, success: false }
-    } finally {
-      set({ loading: false })
     }
   },
   update: async (bookmarkId, updatedBookmark) => {
@@ -94,8 +92,6 @@ export const useBookmarkStore = create<BookmarkState>(set => ({
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "Something went wrong."
       return { data: errorMessage, success: false }
-    } finally {
-      set({ loading: false })
     }
   },
   selectedTag: "",

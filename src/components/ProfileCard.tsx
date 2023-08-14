@@ -41,7 +41,7 @@ const ProfileCard = ({ isProfileCardOpen, closeProfileCard, session }: Props) =>
                   <span className="border border-zinc-600 rounded-full px-3 py-1 text-sm">kmark.boo</span>
                   <Dialog.Title as="h3" className="text-lg font-semibold w-full truncate">{name}</Dialog.Title>
                   <p className="text-sm text-zinc-500"><Balancer>Thank you for choosing kmark.boo to be part of your online journey. Happy bookmarking!</Balancer></p>
-                  <div className="flex w-full mt-6 mb-4">
+                  <div className="flex w-full my-8">
                     <Stat data={daysSinceFirstLogin} description="days" />
                     <Stat data={totalBookmarksCount} description="bookmarks" />
                     <Stat data={totalTagsCount} description="tags" />

@@ -3,7 +3,7 @@ import supabase from "./utils/supabase"
 import Header from "./components/Header"
 import Headline from "./components/Headline"
 import Showcase from "./components/Showcase"
-import AddBookmark from "./components/AddBookmark"
+import AddBookmarkForm from "./components/AddBookmarkForm"
 import TagList from "./components/TagList"
 import Bookmarks from "./components/Bookmarks"
 import ScrollToTop from "./components/ScrollToTop"
@@ -28,7 +28,7 @@ const App = () => {
         <ScrollToTop />
         { session
           ? <>
-              <AddBookmark />
+              <AddBookmarkForm />
               <TagList />
               <Bookmarks />
             </>
